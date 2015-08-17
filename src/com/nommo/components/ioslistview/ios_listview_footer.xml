@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/ios_listview_footer_content"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:padding="15dp" >
+
+        <!--
+             ProgressBar
+            android:id="@+id/ios_listview_footer_progressbar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/xlist_footer_loading"
+            android:visibility="invisible" /
+        -->
+
+        <ImageView
+            android:id="@+id/ios_listview_footer_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/loading"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/ios_listview_footer_hint_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/More"
+            android:textColor="#bebebe"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>
